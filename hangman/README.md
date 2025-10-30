@@ -2,13 +2,21 @@
 
 A modern, interactive Hangman word-guessing game built with multiple technologies and featuring virtual keyboards, dual game modes, and beautiful Material Design UI.
 
-## 📋 Table of Contents
+## 🌟 Live Demo
 
+**� Play Online Now**: [https://abishekbasnet.github.io/hangman/](https://abishekbasnet.github.io/hangman/)
+
+*Experience the full game in your browser with no downloads required!*
+
+## �📋 Table of Contents
+
+- [Live Demo](#-live-demo)
 - [Features](#-features)
 - [Project Structure](#-project-structure)
 - [Technologies Used](#-technologies-used)
 - [Installation & Setup](#-installation--setup)
 - [How to Run](#-how-to-run)
+- [GitHub Pages Deployment](#-github-pages-deployment)
 - [Game Features](#-game-features)
 - [Screenshots](#-screenshots)
 - [Development](#-development)
@@ -39,6 +47,7 @@ A modern, interactive Hangman word-guessing game built with multiple technologie
 
 ```
 hangman/
+├── index.html                   # 🌐 GitHub Pages main file (PLAY HERE!)
 ├── lib/
 │   ├── main.dart                 # Flutter app entry point
 │   └── hangman_game.dart         # Main game logic and UI
@@ -48,6 +57,9 @@ hangman/
 ├── android/                     # Android platform files
 ├── hangman_web.html            # Original web version
 ├── hangman_flutter_style.html  # Flutter-styled web version
+├── 404.html                    # Custom 404 page for GitHub Pages
+├── .nojekyll                   # GitHub Pages configuration
+├── GITHUB_PAGES.md             # GitHub Pages deployment guide
 ├── pubspec.yaml                # Flutter dependencies
 └── README.md                   # Project documentation
 ```
@@ -81,8 +93,8 @@ hangman/
 
 ### **Clone Repository**
 ```bash
-git clone https://github.com/yourusername/hangman-game.git
-cd hangman-game
+git clone https://github.com/AbishekBasnet/hangman.git
+cd hangman
 ```
 
 ### **Flutter Setup**
@@ -99,7 +111,11 @@ flutter config --enable-web
 
 ## 🎮 How to Run
 
-### **Option 1: Flutter Web (Recommended)**
+### **🌐 Option 1: Play Online (Recommended)**
+**No installation required!**
+Simply visit: **[https://abishekbasnet.github.io/hangman/](https://abishekbasnet.github.io/hangman/)**
+
+### **Option 2: Flutter Web (Local Development)**
 ```bash
 # Add Flutter to PATH (Windows)
 $env:PATH += ";C:\flutter\bin"
@@ -111,17 +127,18 @@ flutter run -d chrome
 flutter run
 ```
 
-### **Option 2: HTML Web Versions**
+### **Option 3: HTML Web Versions (Local)**
 ```bash
 # Start local HTTP server
 python -m http.server 8000
 
 # Open in browser:
+# Main GitHub Pages version: http://localhost:8000/
 # Original: http://localhost:8000/hangman_web.html
 # Flutter-style: http://localhost:8000/hangman_flutter_style.html
 ```
 
-### **Option 3: Android (if configured)**
+### **Option 4: Android (if configured)**
 ```bash
 # List available devices
 flutter devices
@@ -129,6 +146,29 @@ flutter devices
 # Run on Android emulator
 flutter run -d emulator-5554
 ```
+
+## 🌐 GitHub Pages Deployment
+
+This project is automatically deployed to GitHub Pages at: **[https://abishekbasnet.github.io/hangman/](https://abishekbasnet.github.io/hangman/)**
+
+### **How it Works**
+1. **Main File**: `index.html` serves as the entry point
+2. **Automatic Deployment**: Every push to `main` branch triggers deployment
+3. **Custom 404**: Friendly error page for invalid URLs
+4. **No Build Process**: Pure HTML/CSS/JS for instant deployment
+
+### **Features for GitHub Pages**
+- ✅ **Instant Loading**: No framework dependencies
+- ✅ **Mobile Optimized**: Responsive design for all devices
+- ✅ **Progressive Web App**: Installable on mobile devices
+- ✅ **SEO Optimized**: Meta tags and Open Graph support
+- ✅ **Game Statistics**: Local storage for progress tracking
+- ✅ **Offline Ready**: Cached resources for offline play
+
+### **Deployment Configuration Files**
+- **`.nojekyll`**: Disables Jekyll processing
+- **`404.html`**: Custom error page
+- **`GITHUB_PAGES.md`**: Deployment documentation
 
 ## 🎯 Game Features
 
@@ -262,14 +302,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Developer**: [Your Name]
-- **Email**: [your.email@example.com]
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Project Link**: [https://github.com/yourusername/hangman-game](https://github.com/yourusername/hangman-game)
+- **Developer**: AbishekBasnet
+- **Email**: abishekbasnet28@gmail.com
+- **GitHub**: [@AbishekBasnet](https://github.com/AbishekBasnet)
+- **Project Link**: [https://github.com/AbishekBasnet/hangman](https://github.com/AbishekBasnet/hangman)
+- **Live Demo**: [https://abishekbasnet.github.io/hangman/](https://abishekbasnet.github.io/hangman/)
 
 ---
 
 ### 🎮 **Ready to Play?**
+
+**🌐 Play Online Now**: [https://abishekbasnet.github.io/hangman/](https://abishekbasnet.github.io/hangman/)
 
 Choose your preferred version and start guessing! Whether you prefer the Flutter app experience or the web version, you'll enjoy the same great gameplay with beautiful Material Design UI.
 
